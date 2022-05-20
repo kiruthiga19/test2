@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap tabel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"href="test2.css">
+  
+</head>
+<body>
+
+<div class="header">
+  <h2> form</h2>
+  <form >
+    <div class="myform">
+      <label for="Name">Name:</label>
+      <input type="name" class="form-control"  placeholder="Enter name"  onsubmit="return validateForm() " required>
+    </div>
+    <div class="myform">
+      <label for="age">age:</label>
+      <input type="age" class="form-control" id="age" placeholder="Enter age" required onsubmit="validateage()">
+    </div>
+    <div class="myform">
+      <label for="gender">gender:</label>
+      <input type="gender" class="form-control" id="gender" placeholder="Enter gender" required>
+    </div>
+    <div class="myform">
+      <label for="phone number">phone number:</label>
+      <input type="phone number" class="form-control" id="phone number" placeholder="Enter phone number"  required onsubmit="validatenumber()"">
+    </div>
+    <div class="myform">
+      <label for="email">email:</label>
+      <input type="email" class="form-control" onsubmit="validateemail() "  placeholder="Enter email"required>
+    </div>
+      
+      
+    </div>
+    <button type="submit" class="btn btn-success" onclick="create()">Submit</button>
+  </form>
+  <script src="index.js"></script>
+</div>
+</body>
+</html>
